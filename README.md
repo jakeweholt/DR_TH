@@ -1,6 +1,6 @@
 ## LendingClub Loan Default Classifier
 
-This is a model library for running and deploying models based on the LendingClub Loan Defualt data, which can be found here: https://www.lendingclub.com/info/download-data.action. Models here were trained on a subset of this data.
+This is a model library for running and deploying models based on the LendingClub Loan Default data, which can be found here: https://www.lendingclub.com/info/download-data.action. Models here were trained on a subset of this data.
 
 ### First Order Tasks
 1. Partition your data into a [holdout set and 5 stratified CV folds](https://github.com/jakeweholt/DR_TH/blob/a2e338bff058b2f1ece09e153b83def85d4bb6f1/model/model.py#L23-L70).
