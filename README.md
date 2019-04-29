@@ -5,20 +5,20 @@
 
 **Logistic Regression:**
 
-**Name**: logistic_regression_model_1
+Model Name: logistic_regression_model_1
 
-**Version**: `0.1.1556570371`
+Version: `0.1.1556570371`
 
-**Model Definition**:
+Definition:
 ```
 SGDClassifier(loss='log', penalty="l2", n_iter=1000)
 ```
 
-**Name**: logistic_regression_model_2
+Model Name: logistic_regression_model_2
 
-**Version**: `0.1.1556570505`
+Version: `0.1.1556570505`
 
-**Model Definition**:
+Definition:
 ```
 SGDClassifier(loss='log', n_iter=1000)
 ```
