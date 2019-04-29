@@ -35,6 +35,7 @@ your methodology.
 - Version: 0.1.1556570371
   - `SGDClassifier(loss='log', penalty="l2", n_iter=1000)`
 - [Validation notebook](https://github.com/jakeweholt/DR_TH/blob/master/logistic_regression_model_validation_1.ipynb)
+
 - Name: logistic_regression_model_2
 - Version: 0.1.1556570505
   - `SGDClassifier(loss='log', n_iter=1000)`
@@ -46,6 +47,7 @@ your methodology.
 - Version: 0.1.1556570382
   - `XGBClassifier(n_estimators=100, scale_pos_weight=6.77)`
 - [Validation notebook](  https://github.com/jakeweholt/DR_TH/blob/master/xgboost_model_validation_1.ipynb)
+
 - Name: xgboost_model_2
 - Version: 0.1.1556570523
   - `XGBClassifier(n_estimators=100)`
