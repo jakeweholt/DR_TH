@@ -3,7 +3,7 @@
 This is a model library for running and deploying models based on the LendingClub Loan Defualt data, which can be found here: https://www.lendingclub.com/info/download-data.action. Models here were trained on a subset of this data.
 
 ### First Order Tasks
-1. Partition your data into a [holdout set and 5 stratified CV folds](https://github.com/jakeweholt/DR_TH/model/model.py#L23-L70).
+1. Partition your data into a [holdout set and 5 stratified CV folds](https://github.com/jakeweholt/DR_TH/blob/a2e338bff058b2f1ece09e153b83def85d4bb6f1/model/model.py#L23-L70).
 2. Pick any two machine learning algorithms from the list below, and build a binary classification model with each of them:
     - [Regularized Logistic Regression](https://github.com/jakeweholt/DR_TH/blob/c27aba7d213097f43029e91f69c9bc5d7bc0aa81/train_model.py#L42-L50)
     - [Gradient Boosting Machine](https://github.com/jakeweholt/DR_TH/blob/c27aba7d213097f43029e91f69c9bc5d7bc0aa81/train_model.py#L28-L40)
