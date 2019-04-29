@@ -10,7 +10,7 @@ This is a model library for running and deploying models based on the LendingClu
 3. Both of your models must make use of numeric, categorical, text, and date features.
     - [Commentary on which columns are used](https://github.com/jakeweholt/DR_TH/blob/master/analysis/01_data_cleaning.ipynb).
 4. Compute out-of-sample LogLoss and F1 scores on cross-validation and holdout.
-    - See results in validation notebooks in the top level repo directory. 
+    - [Current production model notebook](https://github.com/jakeweholt/DR_TH/blob/master/logistic_regression_model_validation_1.ipynb). 
 5. Which one of your two models would you recommend to deploy? Explain your decision.
     - [Problem intro, business motivation and model selection doc](https://docs.google.com/document/d/1V5CiQwuySPbKlDvfX8TpLxi0pXHN26-ehbBut4Noblc/edit?usp=sharing) (may require granted access).
 6. (Advanced, optional) Which 3 features are the most impactful for your model? Explain
