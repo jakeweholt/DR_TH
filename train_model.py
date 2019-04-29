@@ -25,15 +25,28 @@ def train_model(model_type):
     if not os.path.exists(save_directory):
         os.makedirs(save_directory)
 
-    if model_type == 'xgboost_model':
+    if model_type == 'xgboost_model_1':
         d = XGBoostDataProcesser()
         model_definition = XGBClassifier(n_estimators=100, scale_pos_weight=6.77)
         model_fit_parameters = {
             'eval_metric': 'logloss'
         }
-    elif model_type == 'logistic_regression_model':
+
+    if model_type == 'xgboost_model_2':
+        d = XGBoostDataProcesser()
+        model_definition = XGBClassifier(n_estimators=100)
+        model_fit_parameters = {
+            'eval_metric': 'logloss'
+        }
+
+    elif model_type == 'logistic_regression_model_1':
         d = LRDataProcesser()
         model_definition = SGDClassifier(loss='log', penalty="l2", n_iter=1000)
+        model_fit_parameters = {}
+
+    elif model_type == 'logistic_regression_model_2':
+        d = LRDataProcesser()
+        model_definition = SGDClassifier(loss='log', penalty="l1", n_iter=1000)
         model_fit_parameters = {}
 
     # Run raw data through data transformers
@@ -53,7 +66,7 @@ def train_model(model_type):
     save_obj(obj=m, directory_path=save_directory, file_name=model_name)
 
     # Train verification model
-    model_name = 'model_trained_on_validation_data'
+    model_name = 'model_trained_on_validation_split'
     m = Model(model_definition=model_definition)
     m.fit(mtd.X_train, mtd.y_train, model_fit_parameters)
     save_obj(obj=m, directory_path=save_directory, file_name=model_name)
@@ -70,6 +83,6 @@ def train_model(model_type):
 
 
 if __name__ == "__main__":
-    model_types = ['logistic_regression_model', 'xgboost_model']
+    model_types = ['logistic_regression_model_2', 'xgboost_model_2']
     for model_type in model_types:
         train_model(model_type)
