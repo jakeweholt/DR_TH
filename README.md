@@ -1,7 +1,11 @@
 ## LendingClub Loan Default Classifier
--------
 
-### Model Versions
+### Current Version in Production:
+- Name: logistic_regression_model_1, 
+- Version: 0.1.1556570371
+  - `SGDClassifier(loss='log', penalty="l2", n_iter=1000)`
+
+### Other Model Versions
 
 **Logistic Regression:**
 
