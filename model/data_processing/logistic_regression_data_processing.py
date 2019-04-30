@@ -2,7 +2,7 @@ import numpy as np
 import sklearn
 from sklearn_pandas import DataFrameMapper, FunctionTransformer
 from sklearn.preprocessing import StandardScaler
-from .data_processing import preprocess_data
+from .data_processing import preprocess_data, target_variable_column
 
 
 stateful_transforms = DataFrameMapper([
