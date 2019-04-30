@@ -54,4 +54,6 @@ your methodology.
 
 #### Development
 
+This was built using `Python 3.7.1`
+
 Setup a dev environment of your choosing. Run `pip install -r requirements.txt`, which will install all necessary libraries.
