@@ -23,9 +23,12 @@ def hello_world():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        data = json_normalize(request.json)
-        transformed_data = data_processer.transform(data_formatter(data))
-        return 'is_bad probability: {} \n'.format(model.predict_proba(transformed_data)[0][1])
+        try:
+            data = json_normalize(request.json)
+            transformed_data = data_processer.transform(data_formatter(data))
+            return 'is_bad probability: {} \n'.format(model.predict_proba(transformed_data)[0][1])
+        except KeyError:
+            return "KeyError, data likely formatted incorrectly.\n"
 
 
 @app.before_first_request
