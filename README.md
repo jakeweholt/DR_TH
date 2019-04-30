@@ -64,6 +64,7 @@ your methodology.
 
 #### Service Level Architecture
 
-
+The model service runs on an AWS ECS cluster as a Docker image. Inside the docker image is a webapp built using Flask. The ECS image runs behind an application load balancer. Pointed at the ALB is a Route 53 subdomain `datarobot` of my domain www.bigstuffedanimal.com. The actual model endpoint is located at www.datarobot.bigstuffedanimal.com. 
+![Image of AWS Architecture](https://github.com/jakeweholt/DR_TH/blob/master/readme_helper_files/aws_architecture.png)
 
 
