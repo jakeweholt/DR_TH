@@ -2,3 +2,6 @@
 *__pycache__
 *.pyc
 *test.ipynb
+*build/
+*dist/
+*.egg-info/
