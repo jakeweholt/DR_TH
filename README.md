@@ -6,7 +6,7 @@ This is a model library for running and deploying models based on the LendingClu
 
 The model can be interacted with in two ways. First, it has been deployed as a service to AWS. You can hit the endpoint by running a `curl` command with test data, or feel free to use your own data.
 
-Sample `curl` command.
+Sample `curl` command:
 ```
 curl -XPOST -H "Content-Type: application/json" http://datarobot.bigstuffedanimal.com/predict -d '{"Id":1,"emp_title":"Time Warner Cable","emp_length":"10","home_ownership":"MORTGAGE","annual_inc":50000.0,"verification_status":"not verified","pymnt_plan":"n","Notes":null,"purpose_cat":"medical","purpose":"Medical","zip_code":"766xx","addr_state":"TX","debt_to_income":10.87,"delinq_2yrs":0.0,"earliest_cr_line":"12-01-1992","inq_last_6mths":0.0,"mths_since_last_delinq":null,"mths_since_last_record":null,"open_acc":15.0,"pub_rec":0.0,"revol_bal":12087,"revol_util":12.1,"total_acc":44.0,"initial_list_status":"f","collections_12_mths_ex_med":0.0,"mths_since_last_major_derog":1,"policy_code":"PC4"}'
 ```
