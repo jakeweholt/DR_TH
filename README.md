@@ -2,6 +2,15 @@
 
 This is a model library for running and deploying models based on the LendingClub Loan Default data, which can be found here: https://www.lendingclub.com/info/download-data.action. Models here were trained on a subset of this data.
 
+### Interacting with the Model
+
+The model can be interacted with in two ways. First, it has been deployed as a service to aws. You can hit the endpoint by running a curl command with test data:
+
+```
+curl -XPOST -H "Content-Type: application/json" http://datarobot.bigstuffedanimal.com/predict -d '{"Id":1,"emp_title":"Time Warner Cable","emp_length":"10","home_ownership":"MORTGAGE","annual_inc":50000.0,"verification_status":"not verified","pymnt_plan":"n","Notes":null,"purpose_cat":"medical","purpose":"Medical","zip_code":"766xx","addr_state":"TX","debt_to_income":10.87,"delinq_2yrs":0.0,"earliest_cr_line":"12-01-1992","inq_last_6mths":0.0,"mths_since_last_delinq":null,"mths_since_last_record":null,"open_acc":15.0,"pub_rec":0.0,"revol_bal":12087,"revol_util":12.1,"total_acc":44.0,"initial_list_status":"f","collections_12_mths_ex_med":0.0,"mths_since_last_major_derog":1,"policy_code":"PC4"}'
+```
+Secondly, the model can be built locally. Setup a dev environment of your choosing. Run `pip install -r requirements.txt`, which will install all necessary libraries. Next, run `python setup.py install` to install the package to your virtual environment.
+
 ### First Order Tasks
 1. Partition your data into a [holdout set and 5 stratified CV folds](https://github.com/jakeweholt/DR_TH/blob/a2e338bff058b2f1ece09e153b83def85d4bb6f1/model/model.py#L23-L70).
 2. Pick any two machine learning algorithms from the list below, and build a binary classification model with each of them:
@@ -56,4 +65,4 @@ your methodology.
 
 This was built using `Python 3.7.1`
 
-Setup a dev environment of your choosing. Run `pip install -r requirements.txt`, which will install all necessary libraries.
+
