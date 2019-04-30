@@ -1,0 +1,11 @@
+*.ipynb_checkpoints
+*__pycache__
+*.pyc
+*test.ipynb
+data/*
+analysis/*
+
+# Hacky, will need to find better solution.
+saved_models/logistic_regression_model_2
+saved_models/xgboost_model_1
+saved_models/xgboost_model_2
