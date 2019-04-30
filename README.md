@@ -52,4 +52,6 @@ your methodology.
   - `XGBClassifier(n_estimators=100)`
 - [Validation notebook](  https://github.com/jakeweholt/DR_TH/blob/master/xgboost_model_validation_2.ipynb)
 
-#### Creating New Models
+#### Development
+
+Setup a dev environment of your choosing. Run `pip install -r requirements.txt`, which will install all necessary libraries.
